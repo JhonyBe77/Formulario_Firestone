@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Contacto</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Formulario de Contacto</h1>
+        <form id="contactForm">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+            <label for="mensaje">Deja tu comentario:</label>
+            <textarea id="mensaje" name="mensaje" placeholder="Escribe aquí..."></textarea>
+            <label for="imageUrl">URL imagen:</label>
+            <input type="url" id="imageUrl" name="imageUrl" placeholder="Pega aquí la URL de la imagen">
+            <button type="submit">Enviar</button>
+        </form>
+
+        <h2>Contactos Guardados</h2>
+        <ul id="contactList"></ul>
+        <button id="clearAll">Borrar Todos los Contactos</button>
+    </div>
+
+    </section>
+
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-auth.js"></script>
+
+    <script src="./script.js"></script>
+</body>
+</html

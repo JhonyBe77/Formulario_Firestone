@@ -1,0 +1,110 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 100px;
+    background-color:#57CAFC;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+button, .btn-borrar, .btn-editar, .delete-button {
+    padding: 10px 15px;
+    margin-right: 5px;
+    color: white;
+    background-color: #3A8EE4;
+    border: 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Animación de transición suave */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+h1 {
+    color: white;
+}
+
+h2 {
+    color: white;
+}
+
+/* Hover general para todos los botones */
+button:hover, .btn-borrar:hover, .btn-editar:hover, .delete-button:hover {
+    background-color: #2a6eb2;
+}
+
+#clearAll {
+    background-color: red;
+}
+
+#clearAll:hover {
+    background-color: rgb(210, 2, 2);
+}
+
+.btn-borrar, .btn-editar {
+    margin: 5px; /* Espacio arriba de los botones */
+    padding: 5px 10px; /* Espaciado interno del botón */
+    border: none; /* Sin borde */
+    cursor: pointer; /* Cambiar el cursor al pasar el ratón */
+}
+
+.btn-borrar {
+    background-color: red;
+    color: white;
+}
+
+.btn-borrar:hover {
+    background-color: rgb(210, 2, 2);
+}
+
+.btn-editar {
+    background-color: #3A8EE4;
+    color: white;
+}
+
+.btn-editar:hover {
+    background-color: #2a6eb2;
+}
+
+
+#contactList {
+    display: grid; /* Usar grid para la disposición */
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Crear columnas automáticas */
+    gap: 15px; /* Espacio entre columnas */
+    list-style-type: none; /* Sin viñetas */
+    padding: 0; /* Sin padding */
+}
+
+.contact-item {
+    border: 1px solid #ddd; /* Borde alrededor del contacto */
+    border-radius: 5px; /* Esquinas redondeadas */
+    padding: 15px; /* Espaciado interno */
+    background-color: #f9f9f9; /* Color de fondo */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.delete-button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.delete-button:hover {
+    background-color: rgb(210, 2, 2);
+}
